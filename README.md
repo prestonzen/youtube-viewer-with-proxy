@@ -54,3 +54,8 @@ The following commands will help create a docker image, build the app and run it
 You may choose to alter the above params in `utils/constants/index.js` for fine tuning according to your needs. 
 
 Also, the above commands runs 5 docker containers in parallel (which will translate to 5 x **Batch Count** number of Chromium instances running simultaneously) . Adjust this according to how capable your system is.
+
+## Update to Private Proxy Plan
+- Take the current system that calls the TOR routes and have them call a private proxy list file instead
+- Have the system iterate through the list one by one or do it in batches
+- Apply the remaining settings that the program already runs with view time etc with puppeteer 
